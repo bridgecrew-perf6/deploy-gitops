@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: yjhjerry/helloworld:1.2
+        image: yjhjerry/helloworld:v1.2
         ports:
         - containerPort: 8080
 ---
