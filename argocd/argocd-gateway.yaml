@@ -26,13 +26,15 @@ spec:
   - route:
     - destination:
         host: argocd-server
+        port:
+          number: 80
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
   name: argocd
 spec:
-  host: argocd.kube.demo
+  host: argocd-server
   trafficPolicy:
     tls:
       mode: DISABLE
