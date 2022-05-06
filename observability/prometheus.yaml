@@ -12,7 +12,7 @@ spec:
       name: http-prom
       protocol: HTTP
     hosts:
-    - prometheus.kube.demo
+    - prometheus.yjhjerry.com
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -21,7 +21,7 @@ metadata:
   namespace: istio-system
 spec:
   hosts:
-  - prometheus.kube.demo
+  - prometheus.yjhjerry.com
   gateways:
   - prometheus-gateway
   http:
